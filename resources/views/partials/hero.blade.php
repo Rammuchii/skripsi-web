@@ -46,6 +46,14 @@
 
                     </a>
 
+                    <a href="#how-to-use" class="btn btn-link text-success text-decoration-none fw-semibold btn-lg">
+
+                        <i class="bi bi-question-circle me-2"></i>
+
+                        Cara Penggunaan
+
+                    </a>
+
                 </div>
 
                 <div class="row mt-5 g-3">
