@@ -454,3 +454,104 @@ footer{
     margin-bottom:5px;
 
 }
+
+/* ===========================
+   Admin Header (Kelola Harga / Riwayat)
+=========================== */
+
+.admin-header{
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.admin-actions{
+    flex-wrap: wrap;
+}
+
+.admin-actions form{
+    margin: 0;
+}
+
+/* ===========================
+   Mobile Responsive
+=========================== */
+
+@media(max-width:768px){
+
+    .section{
+        padding:60px 0;
+    }
+
+    .hero{
+        padding-top:40px;
+    }
+
+    .hero h1.display-3{
+        font-size:2.1rem;
+    }
+
+    .hero .lead{
+        font-size:1rem;
+    }
+
+    .hero .btn-lg{
+        padding:12px 20px;
+        font-size:.95rem;
+    }
+
+    .hero .d-flex.gap-3{
+        gap:10px!important;
+    }
+
+    .hero .row.g-3 .stat-card{
+        padding:14px 6px;
+    }
+
+    .hero .row.g-3 h2{
+        font-size:1.25rem;
+    }
+
+    .feature-card .card-body{
+        padding:24px!important;
+    }
+
+    #prediction .card-body{
+        padding:24px!important;
+    }
+
+    #dropArea{
+        padding:32px 16px!important;
+    }
+
+    .admin-header{
+        flex-direction:column;
+        align-items:flex-start!important;
+    }
+
+    .admin-actions{
+        width:100%;
+        flex-direction:column;
+    }
+
+    .admin-actions .btn,
+    .admin-actions form{
+        width:100%;
+    }
+
+}
+
+@media(max-width:400px){
+
+    .hero h1.display-3{
+        font-size:1.75rem;
+    }
+
+    .hero .row.g-3 h2{
+        font-size:1.05rem;
+    }
+
+    .hero .row.g-3 small{
+        font-size:.7rem;
+    }
+
+}

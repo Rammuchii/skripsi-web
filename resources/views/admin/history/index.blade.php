@@ -6,14 +6,14 @@
 
         <div class="container">
 
-            <div class="d-flex justify-content-between align-items-center mb-4">
+            <div class="admin-header d-flex justify-content-between align-items-center mb-4">
 
                 <div>
                     <h3 class="fw-bold mb-0">Riwayat Prediksi</h3>
                     <p class="text-muted mb-0">Semua hasil prediksi yang pernah dilakukan.</p>
                 </div>
 
-                <div class="d-flex gap-2">
+                <div class="admin-actions d-flex gap-2">
 
                     <a href="{{ route('admin.prices') }}" class="btn btn-outline-success">
                         <i class="bi bi-tag me-1"></i> Kelola Harga
@@ -28,7 +28,7 @@
                               onsubmit="return confirm('Hapus SEMUA riwayat prediksi? Tindakan ini tidak bisa dibatalkan.');">
                             @csrf
                             @method('DELETE')
-                            <button type="submit" class="btn btn-outline-danger">
+                            <button type="submit" class="btn btn-outline-danger w-100">
                                 <i class="bi bi-trash3 me-1"></i> Hapus Semua
                             </button>
                         </form>
@@ -36,7 +36,7 @@
 
                     <form method="POST" action="{{ route('logout') }}">
                         @csrf
-                        <button type="submit" class="btn btn-outline-secondary">
+                        <button type="submit" class="btn btn-outline-secondary w-100">
                             <i class="bi bi-box-arrow-right me-1"></i> Logout
                         </button>
                     </form>

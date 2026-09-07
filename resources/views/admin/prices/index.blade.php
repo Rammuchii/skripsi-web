@@ -6,14 +6,14 @@
 
         <div class="container" style="max-width: 720px;">
 
-            <div class="d-flex justify-content-between align-items-center mb-4">
+            <div class="admin-header d-flex justify-content-between align-items-center mb-4">
 
                 <div>
                     <h3 class="fw-bold mb-0">Kelola Harga Buah</h3>
                     <p class="text-muted mb-0">Harga per kilogram untuk masing-masing jenis buah.</p>
                 </div>
 
-                <div class="d-flex gap-2">
+                <div class="admin-actions d-flex gap-2">
 
                     <a href="{{ route('admin.history') }}" class="btn btn-outline-success">
                         <i class="bi bi-clock-history me-1"></i> History
@@ -21,7 +21,7 @@
 
                     <form method="POST" action="{{ route('logout') }}">
                         @csrf
-                        <button type="submit" class="btn btn-outline-secondary">
+                        <button type="submit" class="btn btn-outline-secondary w-100">
                             <i class="bi bi-box-arrow-right me-1"></i> Logout
                         </button>
                     </form>
