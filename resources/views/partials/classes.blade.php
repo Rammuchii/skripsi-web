@@ -37,7 +37,7 @@
 
             @foreach ($classes as $class)
 
-                <div style="flex: 0 0 150px;">
+                <div class="class-card-col">
 
                     <div class="card feature-card h-100 text-center {{ ($class['muted'] ?? false) ? 'border-secondary-subtle' : '' }}">
 
