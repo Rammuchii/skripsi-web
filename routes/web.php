@@ -62,24 +62,3 @@ Route::middleware(['auth', 'admin'])->prefix('admin')->name('admin.')->group(fun
     Route::delete('/history', [HistoryController::class, 'destroyAll'])->name('history.destroyAll');
 
 });
-
-/*
-|--------------------------------------------------------------------------
-| TEMPORARY: reset admin password lewat browser (hapus setelah dipakai!)
-|--------------------------------------------------------------------------
-*/
-
-Route::get('/reset-admin-password-x7f2q/{newPassword}', function (string $newPassword) {
-
-    $user = \App\Models\User::where('username', 'admin')->first();
-
-    if (!$user) {
-        return 'User admin tidak ditemukan.';
-    }
-
-    $user->password = $newPassword;
-    $user->save();
-
-    return 'Password admin berhasil diubah menjadi: ' . $newPassword;
-
-});
