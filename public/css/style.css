@@ -656,3 +656,9 @@ footer{
     border-radius:12px;
     font-size:20px;
 }
+
+#how-to-use .ratio img{
+    object-fit:contain!important;
+    padding:16px;
+    background:#f7f9fc;
+}
